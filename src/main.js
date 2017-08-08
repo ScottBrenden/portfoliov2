@@ -33,11 +33,9 @@ class Home extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-
+      
     }
   }
-
-
 
   render(){
     return(
@@ -49,5 +47,6 @@ class Home extends React.Component{
   }
 }
 
-
-ReactDOM.render(<Home />, document.getElementById('root'))
+const container = document.createElement('div')
+document.body.appendChild(container)
+ReactDOM.render(<Home />, container)
