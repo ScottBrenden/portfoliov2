@@ -38,7 +38,7 @@ class Home extends React.Component{
   render(){
     return(
       <div>
-        // <Navbar className="home-nav" />
+        
         <h1> Scott Brenden</h1>
         <BrowserRouter>
           <div>
