@@ -1,47 +1,51 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {BrowserRouter, Route} from 'react-router-dom'
 import './styles/main.scss'
 
-class Navbar extends React.Component{
-  constructor(props){
-      super(props)
-      this.state = {
-        count: 0
-      }
+import {AboutContainer} from './component/about-container'
+import {ProjectsContainer} from './component/projects-container/projects'
 
-      this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick(){
-    console.log('did a click')
-    this.setState(prevState => {count: prevState.count++})
-  }
-
-  render(){
-    return(
-      <div>
-        <p onClick={this.handleClick}> about </p>
-        <p onClick={this.handleClick}> home </p>
-        <p onClick={this.handleClick}> projects </p>
-        <p>{this.state.count}</p>
-      </div>
-    )
-  }
-}
+// class Navbar extends React.Component{
+//   constructor(props){
+//       super(props)
+//       this.state = {}
+//
+//       this.handleClick = this.handleClick.bind(this)
+//   }
+//
+//   handleClick(){
+//     console.log('did a click')
+//     this.setState(prevState => {})
+//   }
+//
+//   render(){
+//     return(
+//       <div>
+//
+//       </div>
+//     )
+//   }
+// }
 
 class Home extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-
     }
   }
 
   render(){
     return(
       <div>
-        <Navbar className="home-nav" />
+        // <Navbar className="home-nav" />
         <h1> Scott Brenden</h1>
+        <BrowserRouter>
+          <div>
+            <Route exact path='/about' component={AboutContainer} />
+            <Route exact path='/projects' component={ProjectsContainer} />
+          </div>
+        </BrowserRouter>
       </div>
     )
   }

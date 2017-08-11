@@ -4,6 +4,10 @@ const HtmlPlugin = require('html-webpack-plugin')
 const ExtractPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
+  devtool: 'eval',
+  devServer: {
+    historyApiFallback: true,
+  },
   entry: `${__dirname}/src/main.js`,
   output: {
     filename: 'bundle-[hash].js',
