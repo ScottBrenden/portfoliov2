@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './_about.scss'
+
 export class AboutContainer extends React.Component {
   render(){
     return (
