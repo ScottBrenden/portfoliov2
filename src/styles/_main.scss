@@ -1,0 +1,25 @@
+//::::VARS:::://
+
+$brand-primary: #353;
+$brand-secondary: #686;
+$white: #fff;
+$black: #000;
+
+//::::MIXINS:::://
+
+//::::STYLES:::://
+nav{
+  color: white;
+  background-color: $brand-primary;
+  ul {
+    padding: 1em;
+  }
+  #name {
+    display: inline-block;
+    padding-right: 3em;
+  }
+  .nav-items {
+    display: inline-block;
+    padding-right: 1em;
+  }
+}
