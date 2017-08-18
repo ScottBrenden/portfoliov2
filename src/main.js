@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {BrowserRouter, Route, Link} from 'react-router-dom'
-import './styles/_main.scss'
 import './styles/_reset.scss'
+import './styles/_main.scss'
 
 import {AboutContainer} from './component/about-container'
 import {ProjectsContainer} from './component/projects-container/projects'
@@ -22,8 +22,8 @@ class App extends React.Component{
       <main>
         <header>
           <nav>
-            <ul>
-              <li id='name'> Scott Brenden </li>
+            <h1 id='name'> Scott Brenden </h1>
+            <ul id='nav-bar'>
               <li className='nav-items'> <a href='/'> HOME </a></li>
               <li className='nav-items'> <a href='/about'> ABOUT </a></li>
               <li className='nav-items'> <a href='/projects'> PROJECTS </a></li>

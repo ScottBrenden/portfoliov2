@@ -1,3 +1,24 @@
+$brand-primary: #353;
+$brand-secondary: #686;
+$white: #fff;
+$black: #000;
+$font-secondary: 'Rajdhani', sans-serif;
+$font-primary: 'Saira Condensed', sans-serif;
+
 .about-container{
-  background: #274;
+  height: 960px;
+  background: #fff;
+}
+
+.about-pic{
+  height: 480px;
+  background: #000;
+}
+
+.about-text{
+  height: 480px;
+}
+
+@media only screen and (min-width: 1100px){
+
 }

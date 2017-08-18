@@ -4,22 +4,70 @@ $brand-primary: #353;
 $brand-secondary: #686;
 $white: #fff;
 $black: #000;
+$font-secondary: 'Rajdhani', sans-serif;
+$font-primary: 'Saira Condensed', sans-serif;
 
 //::::MIXINS:::://
+@mixin txtHeading {
+  font-family: $font-primary;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+@mixin txtBtns {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: $white;
+  font-family: $font-secondary;
+}
+
+@mixin txtContent {
+  font-family: $font-secondary;
+  margin: 1em;
+}
 
 //::::STYLES:::://
+a {
+  @include txtBtns;
+}
+
 nav{
-  color: white;
+  width: 100%;
   background-color: $brand-primary;
-  ul {
-    padding: 1em;
-  }
-  #name {
+  padding: 1em;
+  h1, ul {
     display: inline-block;
-    padding-right: 3em;
   }
-  .nav-items {
-    display: inline-block;
-    padding-right: 1em;
-  }
+}
+
+#name {
+  @include txtHeading;
+}
+
+#nav-bar {
+  @include txtBtns;
+  width: 60%;
+  margin-left: 15%;
+}
+
+.nav-items {
+  display: inline;
+  margin-left: 15%;
+}
+
+.pg-title {
+  @include txtHeading;
+  text-align: center;
+  color: $brand-primary;
+  margin: 1em auto;
+}
+
+.pg-emph {
+  @include txtContent;
+  font-size: 1.5em;
+}
+
+.pg-content {
+  @include txtContent;
+  font-size: 1em;
 }

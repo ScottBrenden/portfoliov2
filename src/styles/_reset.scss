@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+
 	font-size: 100%;
 	vertical-align: baseline;
 }
@@ -40,4 +40,7 @@ blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
+}
+a{
+  text-decoration: none;
 }
