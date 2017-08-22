@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import {BrowserRouter, Route, Link} from 'react-router-dom'
 import './styles/_reset.scss'
 import './styles/_main.scss'
+import './vendor/icons.css'
 
 import {AboutContainer} from './component/about-container'
 import {ProjectsContainer} from './component/projects-container/projects'

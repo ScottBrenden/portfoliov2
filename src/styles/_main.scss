@@ -17,7 +17,7 @@ $font-primary: 'Saira Condensed', sans-serif;
 @mixin txtBtns {
   text-decoration: none;
   font-size: 1.5em;
-  color: $white;
+  color: $black;
   font-family: $font-secondary;
 }
 
@@ -27,6 +27,8 @@ $font-primary: 'Saira Condensed', sans-serif;
 }
 
 //::::STYLES:::://
+
+
 a {
   @include txtBtns;
 }

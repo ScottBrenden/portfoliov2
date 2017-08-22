@@ -26,6 +26,10 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
+        test: /\.css$/,
+        loader: ExtractPlugin.extract("css-loader!autoprefixer-loader")
+      },
+      {
         test: /\.scss$/,
         loader: ExtractPlugin.extract(['css-loader', 'sass-loader']),
       },
