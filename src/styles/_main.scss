@@ -3,7 +3,7 @@
 $brand-primary: #353;
 $brand-secondary: #686;
 $white: #fff;
-$black: #000;
+$black: #111;
 $font-secondary: 'Rajdhani', sans-serif;
 $font-primary: 'Saira Condensed', sans-serif;
 
@@ -66,13 +66,21 @@ nav{
 
 .pg-emph {
   @include txtContent;
-  font-size: 1.5em;
+  font-size: 1.75em;
+  margin-left: 1em;
 }
 
 .pg-content {
   @include txtContent;
   background: #fff;
-  font-size: 1em;
+  font-size: 1.25em;
+  margin: 1.25em;
+}
+
+.sub-section{
+  @include txtBtns;
+  color: $brand-primary;
+  margin: 1em;
 }
 
 @media only screen and (min-width: 820px) {
