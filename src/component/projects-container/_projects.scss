@@ -1,3 +1,24 @@
-body{
-  background: #252;
+$brand-primary: #353;
+$brand-secondary: #686;
+$white: #fff;
+$black: #000;
+$font-secondary: 'Rajdhani', sans-serif;
+$font-primary: 'Saira Condensed', sans-serif;
+
+.project-pic{
+  height: 480px;
+  background: $black;
+}
+
+.project-info-odd{
+  height: 480px;
+  background: $white;
+}
+
+.project-info-even{
+  height: 480px;
+  background: $brand-primary;
+  h1{
+    color: $white;
+  }
 }
