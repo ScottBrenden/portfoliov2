@@ -36,9 +36,10 @@ a {
 nav{
   width: 100%;
   background-color: $brand-primary;
-  padding: 1em;
+  // padding: 1em;
   h1, ul {
     display: inline-block;
+    margin: .25em;
   }
 }
 
@@ -113,7 +114,7 @@ nav{
 
 ////////////////////
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 850px) {
   .cols {
     width: 50%;
     float: left;
