@@ -31,16 +31,12 @@ $font-primary: 'Saira Condensed', sans-serif;
 .project-info-even{
   height: 480px;
   background: $brand-primary;
-  h1{
-    color: $white;
-  }
+  color: $white;
 }
 
 .project-title {
   margin-top: 30%;
   @include txtBox;
   background: rgba(0,0,0,0.5);
-}
-
-.project-title-box {
+  min-width: 250px;
 }
