@@ -5,9 +5,22 @@ $black: #000;
 $font-secondary: 'Rajdhani', sans-serif;
 $font-primary: 'Saira Condensed', sans-serif;
 
+@mixin txtBox {
+  color: $white;
+  border: 1px solid $white;
+  padding: .25em 0;
+  width: 40%;
+  background: rgba(0,0,0,0.5);
+}
+
+.btn-div {
+  margin-top: 5em;
+  text-align: center;
+}
+
 .project-pic{
   height: 480px;
-  background: $black;
+  background: #333;
 }
 
 .project-info-odd{
@@ -21,4 +34,13 @@ $font-primary: 'Saira Condensed', sans-serif;
   h1{
     color: $white;
   }
+}
+
+.project-title {
+  margin-top: 30%;
+  @include txtBox;
+  background: rgba(0,0,0,0.5);
+}
+
+.project-title-box {
 }

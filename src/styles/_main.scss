@@ -25,6 +25,13 @@ $font-primary: 'Saira Condensed', sans-serif;
   margin: 1em;
 }
 
+@mixin txtBox {
+  color: $white;
+  border: 1px solid $white;
+  padding: .25em 0;
+  width: 40%;
+  background: rgba(0,0,0,0.5);
+}
 //::::STYLES:::://
 
 
@@ -58,6 +65,14 @@ nav{
   margin-left: 15%;
 }
  //////////////////////
+.btn-link {
+  @include txtBtns;
+  @include txtBox;
+  padding-left: .5em;
+  padding-right: .5em;
+  text-align: center;
+}
+
 .pg-title {
   @include txtHeading;
   text-align: center;
