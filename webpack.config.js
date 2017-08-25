@@ -34,9 +34,16 @@ module.exports = {
         loader: ExtractPlugin.extract(['css-loader', 'sass-loader']),
       },
       {
-        test: /\.(woff|ttf|svg|eot|jpeg).*/,
+        test: /\.(woff|ttf|svg|eot|jpeg|png).*/,
         loader: 'url-loader?limit=10000&name=image/[hash].[ext]'
-      }
+      },
+      // {
+      //   test: /\.(jpe?g|png|gif|svg)$/i,
+      //   loaders: [
+      //     'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+      //     'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+      //   ]
+      // }
     ],
   },
 }

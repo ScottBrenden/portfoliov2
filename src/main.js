@@ -17,18 +17,20 @@ class App extends React.Component{
     this.state = {
     }
   }
-
   render(){
+    let logo = '/imgs/SBtreelogoblk.png'
     return(
       <main>
         <header>
           <nav>
-            <h1 id='name'> Scott Brenden </h1>
-            <ul id='nav-bar'>
-              <li className='nav-items'> <a href='/'> HOME </a></li>
-              <li className='nav-items'> <a href='/about'> ABOUT </a></li>
-              <li className='nav-items'> <a href='/projects'> PROJECTS </a></li>
-            </ul>
+            <div id='name-logo' className='nav-items'>
+              <h1 id='name'> Scott Brenden </h1>
+              <div className='nav-logo'></div>
+            </div>
+            <div className='nav-items nav-pgs'> <a href='/'> HOME </a></div>
+            <div className='nav-items nav-pgs'> <a href='/about'> ABOUT </a></div>
+            <div className='nav-items nav-pgs'> <a href='/projects'> PROJECTS </a></div>
+            <div className='icon-align-justify menu-icon'></div>
           </nav>
         </header>
         <BrowserRouter>

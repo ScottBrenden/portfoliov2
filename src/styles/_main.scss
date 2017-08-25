@@ -28,12 +28,14 @@ $font-primary: 'Saira Condensed', sans-serif;
 @mixin txtBox {
   color: $white;
   border: 1px solid $white;
-  padding: .25em 0;
+  padding: .2em;
   width: 40%;
   background: rgba(0,0,0,0.5);
+  &:hover {
+    background: rgba(0,0,0,1);
+  }
 }
 //::::STYLES:::://
-
 
 a {
   @include txtBtns;
@@ -44,30 +46,67 @@ nav{
   width: 100%;
   background-color: $brand-primary;
   // padding: 1em;
-  h1, ul {
+  h1 {
     display: inline-block;
-    margin: .25em;
+    // margin: .25em;
   }
+}
+
+.nav-pgs {
+  display: none;
+  @include txtBtns;
+  margin: 0;
+  height: 2em;
+  text-align: center;
+  &:hover {
+    background: $black;
+  }
+}
+
+.menu-icon {
+  display: inline-block;
+  margin: .15em .35em;
+  float: right;
+  font-size: 3em;
+  color: $white;
+  &:hover {
+    color: $black;
+    .nav-pgs {
+      display: inline-block;
+    }
+  }
+}
+
+.nav-logo{
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  background-image: url('../imgs/SBtreelogoblk.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #name {
   @include txtHeading;
+  margin-right: .15em;
 }
 
-#nav-bar {
-  @include txtBtns;
-  width: 60%;
-  margin-left: 15%;
+#name-logo {
+  text-align: center;
+  display: inline-block;
+  width: 50%;
 }
 
 .nav-items {
-  display: inline;
-  margin-left: 15%;
+  padding-top: .6em;
 }
+
  //////////////////////
 .btn-link {
   @include txtBtns;
   @include txtBox;
+  font-weight: bold;
   padding-left: .5em;
   padding-right: .5em;
   text-align: center;
@@ -82,13 +121,13 @@ nav{
 
 .pg-emph {
   @include txtContent;
+  font-weight: bold;
   font-size: 1.75em;
   margin-left: 1em;
 }
 
 .pg-content {
   @include txtContent;
-  background: #fff;
   font-size: 1.25em;
   margin: 1.25em;
 }
@@ -129,9 +168,25 @@ nav{
 
 ////////////////////
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1100px) {
   .cols {
     width: 50%;
     float: left;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  #name-logo {
+    width: 25%;
+  }
+
+  .nav-items {
+    width: 25%;
+  }
+
+  .nav-pgs {
+    display: inline-block;
   }
 }
