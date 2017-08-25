@@ -52,8 +52,11 @@ nav{
   }
 }
 
-.nav-pgs {
+.hide {
   display: none;
+}
+
+.nav-pgs {
   @include txtBtns;
   margin: 0;
   height: 2em;
@@ -69,11 +72,13 @@ nav{
   float: right;
   font-size: 3em;
   color: $white;
-  &:hover {
+}
+
+.menu-icon{
+  &:hover + .nav-pgs {
     color: $black;
-    .nav-pgs {
-      display: inline-block;
-    }
+    // height: 5em;
+    display: block;
   }
 }
 
