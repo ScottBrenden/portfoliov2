@@ -13,24 +13,25 @@ import {landingContainer} from './component/landing-container'
 
 
 class App extends React.Component{
-  constructor(props){
-    super(props)
-    this.state = {
-      windowWidth: window.innerWidth
-    }
-
-    handleResize() {
-      this.setState({windowWidth: window.innerWidth})
-    }
-
-    componentDidMount() {
-      window.addEventListener('resize', this.handleResize.bind(this))
-    }
-
-    componentWillUnmount() {
-      window.removeEventListener('resize', this.handleResize.bind(this))
-    }
-  }
+  // constructor(props){
+  //   super(props)
+  //   this.state = {
+  //     windowWidth: window.innerWidth
+  //     mobileNavVisability: false
+  //   }
+  //
+  //   handleResize() {
+  //     this.setState({windowWidth: window.innerWidth})
+  //   }
+  //
+  //   componentDidMount() {
+  //     window.addEventListener('resize', this.handleResize.bind(this))
+  //   }
+  //
+  //   componentWillUnmount() {
+  //     window.removeEventListener('resize', this.handleResize.bind(this))
+  //   }
+  // }
 
   render(){
     let logo = '/imgs/SBtreelogoblk.png'
@@ -43,9 +44,11 @@ class App extends React.Component{
               <div className='nav-logo'></div>
             </div>
             <div className='icon-align-justify menu-icon'></div>
-            <div className='nav-items nav-pgs'> <a href='/'> HOME </a></div>
-            <div className='nav-items nav-pgs'> <a href='/about'> ABOUT </a></div>
-            <div className='nav-items nav-pgs'> <a href='/projects'> PROJECTS </a></div>
+            <div className='navbar-container'>
+              <div className='nav-items nav-pgs'> <a href='/'> HOME </a></div>
+              <div className='nav-items nav-pgs'> <a href='/about'> ABOUT </a></div>
+              <div className='nav-items nav-pgs'> <a href='/projects'> PROJECTS </a></div>
+            </div>
           </nav>
         </header>
         <BrowserRouter>
