@@ -58,6 +58,7 @@ nav{
 
 .nav-pgs {
   @include txtBtns;
+  // margin-top: -30em;
   margin: 0;
   height: 2em;
   text-align: center;
@@ -107,6 +108,9 @@ nav{
   padding-top: .6em;
 }
 
+.navbar-container {
+  display: inline-block;
+}
  //////////////////////
 .btn-link {
   @include txtBtns;

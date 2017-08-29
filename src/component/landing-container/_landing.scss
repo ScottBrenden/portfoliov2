@@ -1,6 +1,25 @@
+$brand-primary: #353;
+$brand-secondary: #686;
+$white: #fff;
+$black: #111;
+$font-secondary: 'Rajdhani', sans-serif;
+$font-primary: 'Saira Condensed', sans-serif;
+
 body{
   background-image: url('../../imgs/landing-back.jpeg');
   background-size: cover cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.prof-pic {
+  height: 25em;
+  width: 25em;
+  margin: 10em auto;
+  border: 1em solid $white;
+  border-radius: 50%;
+  background-image: url('../../imgs/SBtreelogoblk.png');
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }

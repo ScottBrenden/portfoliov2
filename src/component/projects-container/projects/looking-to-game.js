@@ -3,7 +3,7 @@ import React from 'react'
 export class LookingToGame extends React.Component {
   render(){
     return (
-      <div className='project'>
+      <div id='ltg' className='project'>
         <div className='project-pic cols'>
           <div className='project-title-box'>
             <h1 className='pg-title project-title'>Looking to Game</h1>

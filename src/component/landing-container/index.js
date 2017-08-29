@@ -6,7 +6,8 @@ export class landingContainer extends React.Component {
   render(){
     return(
       <div>
-        <p> landing page </p>
+        <div className='prof-pic'>
+        </div>
       </div>
     )
   }

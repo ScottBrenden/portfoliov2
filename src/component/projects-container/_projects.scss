@@ -13,6 +13,18 @@ $font-primary: 'Saira Condensed', sans-serif;
   background: rgba(0,0,0,0.5);
 }
 
+#mm, #ltg {
+  background: $white;
+}
+
+#dm {
+  background: $brand-primary;
+}
+
+.project {
+  margin-top: -13em;
+}
+
 .btn-div {
   margin-top: 3em;
   text-align: center;

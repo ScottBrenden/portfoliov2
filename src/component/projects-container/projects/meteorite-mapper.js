@@ -3,7 +3,7 @@ import React from 'react'
 export class MeteoriteMapper extends React.Component {
   render(){
     return(
-      <div className='project'>
+      <div id='mm' className='project'>
         <div className='project-pic cols'>
           <div className='project-title-box'>
             <h1 className='pg-title project-title'>Meteorite Mapper</h1>

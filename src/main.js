@@ -44,11 +44,9 @@ class App extends React.Component{
               <div className='nav-logo'></div>
             </div>
             <div className='icon-align-justify menu-icon'></div>
-            <div className='navbar-container'>
-              <div className='nav-items nav-pgs'> <a href='/'> HOME </a></div>
-              <div className='nav-items nav-pgs'> <a href='/about'> ABOUT </a></div>
-              <div className='nav-items nav-pgs'> <a href='/projects'> PROJECTS </a></div>
-            </div>
+            <div className='nav-items nav-pgs'> <a href='/'> HOME </a></div>
+            <div className='nav-items nav-pgs'> <a href='/about'> ABOUT </a></div>
+            <div className='nav-items nav-pgs'> <a href='/projects'> PROJECTS </a></div>
           </nav>
         </header>
         <BrowserRouter>
