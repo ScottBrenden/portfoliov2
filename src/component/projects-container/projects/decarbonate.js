@@ -4,7 +4,7 @@ export class Decarbonate extends React.Component {
   render(){
     return (
       <div id='dm' className='project'>
-        <div className='project-pic cols'>
+        <div id='dm-pic' className='project-pic cols'>
           <div className='project-title-box'>
             <h1 className='pg-title project-title'>Decarbonate</h1>
           </div>

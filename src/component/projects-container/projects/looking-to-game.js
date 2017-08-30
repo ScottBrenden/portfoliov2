@@ -4,7 +4,7 @@ export class LookingToGame extends React.Component {
   render(){
     return (
       <div id='ltg' className='project'>
-        <div className='project-pic cols'>
+        <div id='ltg-pic' className='project-pic cols'>
           <div className='project-title-box'>
             <h1 className='pg-title project-title'>Looking to Game</h1>
           </div>
