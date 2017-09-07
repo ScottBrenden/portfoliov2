@@ -69,6 +69,12 @@ $font-primary: 'Saira Condensed', sans-serif;
   background-repeat: no-repeat;
 }
 
+#mm-pic{
+  background-image: url('../../imgs/meteorite.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 //////////////////////////////////
 
 @media only screen and (min-width: 1100px){
