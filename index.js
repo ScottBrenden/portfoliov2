@@ -1,6 +1,5 @@
 'use strict';
 
-// const pg = require('pg');
 const fs = require('fs');
 const express = require('express');
 
