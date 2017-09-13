@@ -13,25 +13,6 @@ import {landingContainer} from './component/landing-container'
 
 
 class App extends React.Component{
-  // constructor(props){
-  //   super(props)
-  //   this.state = {
-  //     windowWidth: window.innerWidth
-  //     mobileNavVisability: false
-  //   }
-  //
-  //   handleResize() {
-  //     this.setState({windowWidth: window.innerWidth})
-  //   }
-  //
-  //   componentDidMount() {
-  //     window.addEventListener('resize', this.handleResize.bind(this))
-  //   }
-  //
-  //   componentWillUnmount() {
-  //     window.removeEventListener('resize', this.handleResize.bind(this))
-  //   }
-  // }
 
   render(){
     let logo = '/imgs/SBtreelogoblk.png'
@@ -44,9 +25,9 @@ class App extends React.Component{
               <div className='nav-logo'></div>
             </div>
             <div className='icon-align-justify menu-icon'></div>
-            <div className='nav-items nav-pgs'> <a href='/'> HOME </a></div>
-            <div className='nav-items nav-pgs'> <a href='/about'> ABOUT </a></div>
-            <div className='nav-items nav-pgs'> <a href='/projects'> PROJECTS </a></div>
+            <a href='/'><div className='nav-items nav-pgs'> HOME </div></a>
+            <a href='/about'><div className='nav-items nav-pgs'> ABOUT </div></a>
+            <a href='/projects'><div className='nav-items nav-pgs'> PROJECTS </div></a>
           </nav>
         </header>
         <BrowserRouter>
@@ -62,8 +43,3 @@ class App extends React.Component{
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
-// const container = document.createElement('div')
-// document.body.appendChild(container)
-// ReactDOM.render(<Home />, container)
-
-// <HamburgerMenu isOpen={this.state.open} menuClicked={this.handleClick.bind(this)} className='menu-icon' />

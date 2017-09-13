@@ -4,13 +4,15 @@ $brand-primary: #353;
 $brand-secondary: #686;
 $white: #fff;
 $black: #111;
-$font-secondary: 'Rajdhani', sans-serif;
+$font-secondary: 'Saira Condensed', sans-serif;
 $font-primary: 'Saira Condensed', sans-serif;
+$font-small: 'Dosis', sans-serif;
+$font-title: 'Permanent Marker', cursive;
 
 //::::MIXINS:::://
 @mixin txtHeading {
-  font-family: $font-primary;
-  font-size: 3em;
+  font-family: $font-title;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
@@ -23,6 +25,10 @@ $font-primary: 'Saira Condensed', sans-serif;
 @mixin txtContent {
   font-family: $font-secondary;
   margin: 1em;
+}
+
+@mixin txtSmall {
+  font-family: $font-small;
 }
 
 @mixin txtBox {
@@ -133,7 +139,7 @@ nav{
 }
 
 .pg-content {
-  @include txtContent;
+  @include txtSmall;
   font-size: 1.25em;
   margin: 1.25em;
 }

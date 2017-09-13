@@ -14,7 +14,7 @@ export class MeteoriteMapper extends React.Component {
           <p className='pg-content'>Using NASA's meteorite landings API, and the Google maps API the app displays 3000 filterable meteorite landing sites. When clicked on each site will display some basic information about that meteorite.</p>
           <p className='pg-content'>The app is written in JavaScript, using NodeJS jQuery, Ajax, pageJS and Express. In order to prevent unnecessary calls to NASA's API a SQL database was set up for data persistence after the initial call.</p>
           <div className='btn-div'>
-            <a href='#' className='btn-link'>Deployed version</a>
+            <a href='https://meteorite-mapper.herokuapp.com/' className='btn-link'>Deployed version</a>
           </div>
         </div>
       </div>
