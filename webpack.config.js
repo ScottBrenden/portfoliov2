@@ -34,7 +34,7 @@ module.exports = {
         loader: ExtractPlugin.extract(['css-loader', 'sass-loader']),
       },
       {
-        test: /\.(woff|ttf|svg|eot|jpeg|png).*/,
+        test: /\.(woff|ttf|svg|eot|jpeg|png|ico).*/,
         loader: 'url-loader?limit=10000&name=image/[hash].[ext]'
       },
       // {
