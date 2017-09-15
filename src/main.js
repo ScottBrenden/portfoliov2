@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Favicon from 'react-favicon'
 import {BrowserRouter, Route, Link} from 'react-router-dom'
 import './styles/_reset.scss'
 import './styles/_main.scss'
@@ -37,6 +38,7 @@ class App extends React.Component{
             <Route exact path='/projects' component={ProjectsContainer} />
           </div>
         </BrowserRouter>
+        <Favicon url="./imgs/SBtreelogo32x.ico" />
       </main>
     )
   }
