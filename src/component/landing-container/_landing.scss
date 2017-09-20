@@ -5,17 +5,19 @@ $black: #111;
 $font-secondary: 'Rajdhani', sans-serif;
 $font-primary: 'Saira Condensed', sans-serif;
 
-body{
+#landing-container{
+  // margin-top: -10em;
+  min-height: 80em;
   background-image: url('../../imgs/landing-back.jpeg');
   background-size: cover cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 5em;
 }
 
 .prof-pic {
   height: 25em;
   width: 25em;
-
   border-radius: 50%;
   background-image: url('../../imgs/SBtreelogo.png');
   background-size: cover;
